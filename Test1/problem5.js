@@ -1,0 +1,9 @@
+var filterActiveUsers = function (users) {
+    return users.filter(function (user) { return user.isActive === true; });
+};
+var users = [
+    { id: 1, name: 'Rakib', email: 'rakib@example.com', isActive: true },
+    { id: 2, name: 'Asha', email: 'asha@example.com', isActive: false },
+    { id: 3, name: 'Rumi', email: 'rumi@example.com', isActive: true },
+];
+console.log(filterActiveUsers(users));
